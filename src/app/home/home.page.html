@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Punk Finder
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Punk Finder</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="header"></div>
+  <div class="list">
+    <ion-button (click)="orderDefinitiva()">order definitiva</ion-button>
+    <ion-button (click)="loggaDefinitiva()">logga definitiva</ion-button>
+    <ion-button (click)="getArrayArtisti()">get artisti</ion-button>
+    <ion-card *ngFor="let track of definitiva;index as i">
+      <ion-card-content>
+        {{i + 1}} - {{track.track.name}}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

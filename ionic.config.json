@@ -1,0 +1,7 @@
+{
+  "name": "punk-finder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
